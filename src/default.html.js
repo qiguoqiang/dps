@@ -3,7 +3,7 @@ module.exports = `
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>example</title>
+    <title>example11111</title>
     <style>
       @keyframes opacity {
         0% {
@@ -16,6 +16,15 @@ module.exports = `
             opacity: 1
         }
       }
+
+      @keyframes skeleton-stripes {
+          0% {
+                background-position: -500px 0;
+            }
+            100% {
+                background-position: 500px 0;
+            }
+    }
     </style>
   </head>
   <body>
@@ -24,3 +33,23 @@ module.exports = `
   </body>
 </html>
 `;
+
+
+// @keyframes skeleton-stripes {
+//   0% {
+//       background-position: -500px 0;
+//   }
+//   100% {
+//       background-position: 500px 0;
+//   }
+// }
+
+// @keyframes skeleton-stripes {
+//   0% {
+//       background-position: 0 0;
+//   }
+
+//   to {
+//       background-position: 480px 0;
+//   }
+// }

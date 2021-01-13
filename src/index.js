@@ -13,6 +13,7 @@ class DrawPageStructure {
       url,
       output = {},
       background,
+      pageBackground,
       animation,
       rootNode,
       header,
@@ -28,6 +29,7 @@ class DrawPageStructure {
       this.filepath = filepath;
       this.injectSelector = output.injectSelector || 'body';
       this.background = background || '#ecf0f2';
+      this.pageBackground = pageBackground || '#fff';
       this.animation = animation || '';
       this.rootNode = rootNode || '';
       this.header = header || '';
@@ -90,6 +92,10 @@ class DrawPageStructure {
           type: 'string',
           value: this.background
         }, 
+        pageBackground: {
+          type: 'string',
+          value: this.pageBackground
+        },
         animation: {
           type: 'string',
           value: this.animation

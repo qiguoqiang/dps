@@ -15,7 +15,12 @@ module.exports = function evalDOM() {
   const classProps = {
     position: 'fixed',
     zIndex: 999,
-    background: agrs.background
+    // background: "linear-gradient(90deg,#fff,#edeff1,#fff)",
+    // "background-size":"480px 480px",
+    
+    background: agrs.background,
+    "background-size":"1000px 100%",
+    "background-image": "linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%)"
   }
   if(agrs.animation) {
     classProps.animation = agrs.animation;
@@ -175,7 +180,7 @@ module.exports = function evalDOM() {
       drawBlock({
         height: 100, 
         zIndex: 990,
-        background: '#fff',
+        background: agrs.pageBackground || '#fff',
         subClas: true
       });
       this.withHeader();

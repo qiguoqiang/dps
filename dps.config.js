@@ -1,15 +1,18 @@
 
 const dpsConfig = {
-	url: 'https://baidu.com',      // 待生成骨架屏页面的地址，用百度（https://baidu.com）试试也可以
+	url: 'http://localhost/bonus-account.html#/?routerKey=5872ebd0&token=d35001b1-0c75-4f68-8b85-59f33290d996',      // 待生成骨架屏页面的地址，用百度（https://baidu.com）试试也可以
 	output: {
 		filepath: '',   // 生成骨架屏的存放页面，一般为项目的入口页面
 		injectSelector: '#app'  // 生成的骨架屏插入页面的节点
 	},
+	animation: 'skeleton-stripes 1s linear infinite;',
+	device:"mobile",
+	background: '#eee',
+	pageBackground: "#fff",
 	// header: {
 	// 	height: 40,
 	// 	background: '#3388ff'
 	// },
-	// background: '#eee',
 	// animation: 'opacity 1s linear infinite;',
 	// includeElement: function(node, draw) {
 		// 定制某个节点画出来的样子，带上return false
